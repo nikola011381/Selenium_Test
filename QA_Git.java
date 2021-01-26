@@ -9,11 +9,10 @@ public class QA_Git
     {
         WebDriver driver = new ChromeDriver();
         driver.manage().window().maximize();
-        driver.get("https://github.com/");
+        driver.get("https://nekisajt.com/");
         driver.findElement(By.id("user[login]")).sendKeys("test");
-        driver.findElement(By.id("user[email]")).sendKeys("test@test.com");
         driver.findElement(By.id("user[password]")).sendKeys("test");
-        driver.findElement(By.xpath("//*[contains(text(), 'Sign up for GitHub')]")).click();
+        driver.findElement(By.xpath("//*[contains(text(), 'Sign in')]")).click();
 
 
     }
